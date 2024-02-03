@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, #2e026d, #15162c);
+  background-image: linear-gradient(to bottom, #FFFFFF, #15162c);
 }
 
 .container {
@@ -53,7 +53,7 @@
   font-weight: 800;
   letter-spacing: -0.025em;
   margin: 0;
-  color: white;
+  color: #630031;
 }
 
 @media (min-width: 640px) {
@@ -63,7 +63,7 @@
 }
 
 .pinkSpan {
-  color: hsl(280 100% 70%);
+  color: #CF4420;
 }
 
 .cardRow {
