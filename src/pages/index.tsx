@@ -1,14 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
-
 import styles from "./index.module.css";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Apartment Buddy</title>
-        <meta name="Apartment Buddy" content="Apartment Community Chat App" />
+        <title>Buddy Burg</title>
+        <meta name="Buddy Burg" content="Apartment Community Chat App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
@@ -25,19 +24,21 @@ export default function Home() {
                 Let us help you by connecting you with your building community!
               </div>
             </div>
-            <Link
+            
+            <div
               className={styles.card}
-              href="https://create.t3.gg/en/introduction"
-              target="_blank"
             >
-              <h3 className={styles.cardTitle}>Find your building! →</h3>
+              <Link href="/List"> 
+                  <h3 className={styles.cardTitle}>Find your building! →</h3>
+              </Link>
               <div className={styles.cardText}>
                 We currently offer chat services for the Edge, Hub, and Union student living communities.
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </main>
+
     </>
   );
 }
